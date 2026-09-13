@@ -94,6 +94,12 @@ def load_demo_architecture():
 # SIDEBAR NAVIGATION
 # ============================================================================
 
+if "selected_phase" not in st.session_state:
+    st.session_state.selected_phase = "🏠 Home"
+
+if "pending_phase" in st.session_state:
+    st.session_state.selected_phase = st.session_state.pop("pending_phase")
+
 with st.sidebar:
     st.title("🏗️ ArchiCode V1.0")
     st.markdown("---")
@@ -119,7 +125,8 @@ with st.sidebar:
             "🚀 Deploy",
             "👁️ Observe",
             "🔄 Reconcile"
-        ]
+        ],
+        key="selected_phase"
     )
     
     st.markdown("---")
@@ -502,7 +509,8 @@ elif "🎯 Model" in page:
     
     with col3:
         if st.button("➡️ Go to Validate", key="goto_validate"):
-            st.switch_page("pages/2_Validate.py")
+            st.session_state.pending_phase = "✅ Validate"
+            st.rerun()
 
 
 # ============================================================================
