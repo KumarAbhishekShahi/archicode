@@ -30,7 +30,7 @@ from core.generators import GeneratorOrchestrator
 # ============================================================================
 
 st.set_page_config(
-    page_title="Architecture-as-Code Generator",
+    page_title="ArchiCode",
     page_icon="🏗️",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -95,7 +95,7 @@ def load_demo_architecture():
 # ============================================================================
 
 with st.sidebar:
-    st.title("🏗️ Architecture-as-Code")
+    st.title("🏗️ ArchiCode V1.0")
     st.markdown("---")
     
     # Demo Mode Quick Access
@@ -169,7 +169,7 @@ with st.sidebar:
 # ============================================================================
 
 if "🏠" in page:
-    st.title("🏗️ Architecture-as-Code Generator")
+    st.title("🏗️ ArchiCode")
     st.markdown("*From Architectural Intent to Real-World Impact*")
     
     st.markdown("---")
@@ -195,7 +195,7 @@ if "🏠" in page:
     col1, col2 = st.columns(2)
     
     with col1:
-        st.subheader("🎯 What is Architecture-as-Code?")
+        st.subheader("🎯 What is ArchiCode?")
         st.markdown("""
         AaC is the practice of representing enterprise architecture decisions,
         design patterns, and policies in machine-readable, validatable form.
@@ -952,4 +952,4 @@ elif "🔄 Reconcile" in page:
 
 
 st.markdown("---")
-st.markdown("*Architecture-as-Code Generator • People + Policy + Automation + AI + Real Business Outcomes*")
+st.markdown("*ArchiCode Generator • People + Policy + Automation + AI + Real Business Outcomes*")
