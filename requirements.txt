@@ -1,0 +1,69 @@
+# Core Dependencies
+streamlit                    # Web UI framework
+streamlit-ace                # Code/YAML editing component (Replaced hallucinated streamlit-yaml-editor)
+python-dotenv                # Environment management
+
+# Data Models & Validation
+pydantic                     # Data validation with Python type annotations
+pydantic-yaml                # YAML support for Pydantic
+jsonschema                   # JSON Schema validation
+
+# AI/ML & Agents
+anthropic                    # Claude API for agentic features
+openai                       # Alternative LLM provider support
+langgraph                    # Agent orchestration framework (Removed invalid 0.0.1 pin)
+langchain                    # LLM framework
+
+# Data Processing
+pandas                       # Data analysis
+numpy                        # Numerical computing
+PyYAML                       # YAML parsing
+pyyaml-include               # YAML includes for modularity
+
+# Code Generation
+jinja2                       # Template rendering for IaC
+black                        # Code formatting
+pylint                       # Code linting
+
+# Infrastructure & Cloud
+python-hcl2                  # Parse Terraform code (Replaced hallucinated terraform-parser)
+kubernetes                   # Kubernetes client library
+
+# Visualization & UI
+plotly                       # Interactive charts
+streamlit-mermaid            # Diagram generation (Replaced hallucinated mermaid)
+graphviz                     # Graph visualization
+
+# Utilities
+python-dateutil              # Date utilities
+pytz                         # Timezone support
+requests                     # HTTP client
+click                        # CLI framework
+tqdm                         # Progress bars
+loguru                       # Structured logging
+
+# Testing & Quality
+pytest                       # Testing framework
+pytest-cov                   # Coverage reporting
+pytest-asyncio               # Async test support
+faker                        # Test data generation
+
+# Development
+pre-commit                   # Git hooks for quality checks
+sphinx                       # Documentation generation
+
+# Optional: Export & Reporting
+openpyxl                     # Excel export
+python-pptx                  # PowerPoint generation
+reportlab                    # PDF generation
+
+# Optional: Git Integration
+gitpython                    # Git operations from Python
+
+# Database (optional for persistent storage)
+sqlalchemy                   # ORM for database operations
+psycopg2-binary              # PostgreSQL adapter
+
+# Caching & Performance
+redis                        # In-memory data store
+cachetools                   # Caching utilities
